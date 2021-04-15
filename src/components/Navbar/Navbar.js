@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     alignItems: "center",
-    color: "#479AD1",
+    backgroundColor: "#204B57",
   },
   title: {
     display: "flex",
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "center",
     marginLeft: theme.spacing(25),
     backgroundImage:
-      "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(208,237,241,1) 0%, rgba(71,154,209,1) 70%)",
+      "linear-gradient(90deg, rgba(253,231,76,1) 0%, rgba(46,196,182,1) 67%)",
     fontFamily: "Dela Gothic One, cursive",
     fontStyle: "italic",
     WebkitBackgroundClip: "text",
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   titleDash: {
     marginLeft: theme.spacing(1),
     background:
-      "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(208,237,241,1) 0%, rgba(71,154,209,1) 50%)",
+      "linear-gradient(90deg, rgba(253,231,76,1) 0%, rgba(46,196,182,1) 67%)",
     height: "20px",
     width: "80px",
     borderRadius: "10px",
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(25),
   },
   searchIcon: {
-    color: "#D0EDF1",
+    color: "#FBFBFF",
     fontSize: "2rem",
   },
 }));
@@ -61,7 +61,7 @@ export const Navbar = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.appBar} position="static">
         <Toolbar className={classes.toolbar}>
           <Typography className={classes.title} variant="h4" noWrap>
             FP
