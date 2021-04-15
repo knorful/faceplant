@@ -3,6 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
+import CloseIcon from "@material-ui/icons/Close";
 import { makeStyles } from "@material-ui/core/styles";
 import { SearchShow } from "../SearchShow/SearchShow";
 import SearchIcon from "@material-ui/icons/Search";
@@ -70,10 +71,17 @@ export const Navbar = () => {
             aria-label="search"
             color="inherit"
           >
-            <SearchIcon
-              onClick={handleSearchClick}
-              className={classes.searchIcon}
-            />
+            {!searchClick ? (
+              <SearchIcon
+                onClick={handleSearchClick}
+                className={classes.searchIcon}
+              />
+            ) : (
+              <CloseIcon
+                className={classes.searchIcon}
+                onClick={handleSearchClick}
+              />
+            )}
           </IconButton>
         </Toolbar>
       </AppBar>
