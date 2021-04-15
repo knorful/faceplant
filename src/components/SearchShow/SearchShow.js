@@ -8,6 +8,9 @@ import Input from "@material-ui/core/Input";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    position: "absolute",
+    width: "100%",
+    backgroundColor: "white",
   },
   searchInput: {
     display: "flex",
