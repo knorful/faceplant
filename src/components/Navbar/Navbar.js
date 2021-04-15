@@ -24,9 +24,13 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     alignSelf: "center",
     marginLeft: theme.spacing(25),
-    color: "white",
+    backgroundImage:
+      "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(208,237,241,1) 0%, rgba(71,154,209,1) 70%)",
     fontFamily: "Dela Gothic One, cursive",
     fontStyle: "italic",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    MozBackgroundClip: "text",
   },
   titleDash: {
     marginLeft: theme.spacing(1),
