@@ -4,7 +4,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import Image from "../../assets/game-bg.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
