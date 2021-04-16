@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   hero: {
-    backgroundColor: "#2EC4B6",
+    backgroundImage:
+      "linear-gradient(132deg, rgba(46,196,182,1) 0%, rgba(32,75,87,1) 54%)",
     height: "425px",
   },
   heroHeader: {
